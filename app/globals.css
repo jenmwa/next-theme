@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+h1 {
+  @apply font-black text-6xl mb-8
+}
+
+@layer components {
+  .party {
+    background: linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 30%),
+                linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 30%),
+                linear-gradient(336deg, rgba(0,0,255,.4), rgba(0,0,255,0) 30%);
+  }
+ 
+}
+
+@layer components {
+
+.custom-focus {
+  @apply focus:outline-double focus:outline-4 focus:outline-offset-2;
+}
+}
