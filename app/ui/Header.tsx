@@ -20,7 +20,7 @@ export const Header = () => {
         >
           JenWaller.se
         </span>
-        {/* <Navigation></Navigation> */}
+
         <ThemeSwitch></ThemeSwitch>
       </header>
     </>

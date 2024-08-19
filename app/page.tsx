@@ -9,6 +9,10 @@ import jennyParty from "../public/jenny_waller_desktop.webp";
 
 export default function Home() {
   const { isPartyTheme } = useContext(ThemeContext);
+
+  const handleButtonClick = () => {
+    window.open("https://github.com/jenmwa", "_blank");
+  };
   return (
     <div
       className={`flex flex-1 h-full flex-col pt-8 pb-8 px-12 lg:px-24 md:overflow-y-auto ${
@@ -57,10 +61,20 @@ export default function Home() {
             <span className="text-xl font-bold">Next.js</span>{" "}
             <span className="text-xl font-bold">TypeScript </span> och
             <span className="text-xl font-bold">Tailwind</span> playground med
-            kaka, tema-context samt villkorstyrd rendering. <br /> Enjoy!
+            kaka, tema-context samt lite villkorstyrd rendering. <br /> Enjoy!
           </div>
           <div className="md:flex md:justify-end">
-            {isPartyTheme ? <BusinessPrimaryButton /> : <PartyPrimaryButton />}
+            {isPartyTheme ? (
+              <BusinessPrimaryButton
+                handleButtonClick={handleButtonClick}
+                value={"GÅ TILL GITHUB"}
+              />
+            ) : (
+              <PartyPrimaryButton
+                handleButtonClick={handleButtonClick}
+                value={"GÅ TILL GITHUB"}
+              />
+            )}
           </div>
         </div>
       </div>
