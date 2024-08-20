@@ -23,7 +23,7 @@ export const Footer = () => {
   return (
     <footer
       className={`${
-        isPartyTheme ? "bg-slate-700" : "bg-blue-900"
+        isPartyTheme ? "bg-blue-900" : "bg-slate-700"
       } text-slate-100 h-24 flex justify-center items-center gap-12 px-12 	`}
     >
       <SocialsIcon

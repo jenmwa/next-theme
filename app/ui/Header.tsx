@@ -10,12 +10,12 @@ export const Header = () => {
     <>
       <header
         className={`h-24 px-8 md:flex-none ${
-          !isPartyTheme ? "bg-yellow-200" : "bg-slate-400"
+          isPartyTheme ? "bg-yellow-200" : "bg-slate-400"
         } flex justify-between items-center`}
       >
         <span
           className={` ${
-            !isPartyTheme ? londrina.className : inter.className
+            isPartyTheme ? londrina.className : inter.className
           } text-2xl`}
         >
           JenWaller.se

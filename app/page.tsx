@@ -16,47 +16,47 @@ export default function Home() {
   return (
     <div
       className={`flex flex-1 h-full flex-col pt-8 pb-8 px-12 lg:px-24 md:overflow-y-auto ${
-        isPartyTheme ? "business" : "party"
+        isPartyTheme ? "party" : "business"
       }`}
     >
       {isPartyTheme ? (
-        <h1 className="">Business in the front</h1>
-      ) : (
         <h1 className={`${londrina.className} text-6xl `}>
           PARTY in the back! 🎉
         </h1>
+      ) : (
+        <h1 className="">Business in the front</h1>
       )}
-      <div className="flex-1 p-8 w-full gap-4 bg-white rounded-sm flex flex-col justify-between lg:flex-row ">
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 h-80 lg:h-[29rem] sm:flex-1">
+      <div className="flex-1 p-8 w-full gap-4 bg-white rounded-sm flex flex-col justify-between lg:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-80 lg:h-[29rem] sm:flex-1">
           <div className="border overflow-hidden">
             <Image
-              src={isPartyTheme ? jennyBusiness : jennyParty}
+              src={isPartyTheme ? jennyParty : jennyBusiness}
               alt={
                 isPartyTheme ? "Jenny Waller partying" : "Jenny Waller serious"
               }
               width={200}
               height={200}
               className={`object-contain w-full h-full object-right-bottom ${
-                isPartyTheme ? "bg-slate-300" : "bg-rose-100"
+                isPartyTheme ? "bg-rose-100" : "bg-slate-300"
               }`}
             />
           </div>
           <div className="border overflow-hidden md:block hidden">
             <Image
-              src={isPartyTheme ? jennyBusiness : jennyParty}
+              src={isPartyTheme ? jennyParty : jennyBusiness}
               alt={
                 isPartyTheme ? "Jenny Waller partying" : "Jenny Waller serious"
               }
               width={200}
               height={200}
               className={`object-contain w-full h-full object-right-bottom ${
-                isPartyTheme ? "bg-slate-300" : "bg-rose-100"
+                isPartyTheme ? "bg-rose-100" : "bg-slate-300"
               }`}
             />
           </div>
         </div>
 
-        <div className=" gap-4 grid content-between lg:w-1/3 lg:ml-4">
+        <div className="gap-4 grid content-between lg:w-1/3 lg:ml-4">
           <div className="h-auto w-full">
             <span className="text-xl font-bold">Next.js</span>{" "}
             <span className="text-xl font-bold">TypeScript </span> och
@@ -65,12 +65,12 @@ export default function Home() {
           </div>
           <div className="md:flex md:justify-end">
             {isPartyTheme ? (
-              <BusinessPrimaryButton
+              <PartyPrimaryButton
                 handleButtonClick={handleButtonClick}
                 value={"GÅ TILL GITHUB"}
               />
             ) : (
-              <PartyPrimaryButton
+              <BusinessPrimaryButton
                 handleButtonClick={handleButtonClick}
                 value={"GÅ TILL GITHUB"}
               />

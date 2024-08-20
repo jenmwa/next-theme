@@ -17,6 +17,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
         .find((row) => row.startsWith("theme="));
       const theme = storedTheme ? storedTheme.split("=")[1] : "business";
 
+      // Set the theme based on the cookie value
       if (theme === "party") {
         setIsPartyTheme(true);
         document.documentElement.classList.add("party");
@@ -31,11 +32,13 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   useEffect(() => {
     if (isInitialized) {
       if (isPartyTheme) {
+        // When the party theme is true, set the cookie and class accordingly
         document.documentElement.classList.add("party");
         document.cookie = `theme=party; path=/; max-age=${
           365 * 24 * 60 * 60
         }; SameSite=Lax`;
       } else {
+        // When the party theme is false, revert to the business theme
         document.documentElement.classList.remove("party");
         document.cookie = `theme=business; path=/; max-age=${
           365 * 24 * 60 * 60
