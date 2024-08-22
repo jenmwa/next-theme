@@ -1,37 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Theme Context
 
-## Getting Started
+Small Next.js, Typescript, project with change of Themes using Cookie and Context for user settings.
 
-First, run the development server:
+### Subheadline
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A responsive and user-friendly portfolio-inspired Single Page built with Next.js, TypeScript, and Tailwind CSS. Easily toggle between professional and creative themes, with user preferences stored in cookies for a seamless experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit the [live site here](https://next-theme-sooty.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Dual Theme Mode: Easily switch between a "Business" and "Party" theme to showcase different styles.
+- Persistent User Preferences: Theme choice is saved using cookies, so the user's preferred theme is retained on return visits.
+- Responsive Design: Fully responsive, ensuring the site looks great on all devices.
+- Context API: Manage theme states efficiently with React Context.
+- TypeScript Integration: Strongly typed components for better maintainability and development speed.
 
-## Learn More
+## Demo
 
-To learn more about Next.js, take a look at the following resources:
+![demo Title](/public/businessParty.gif)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![My Skills](https://skillicons.dev/icons?i=next,typescript,tailwind,vercel,nodejs)](https://skillicons.dev)
 
-## Deploy on Vercel
+## Acknowledgements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# next-theme
+This is a project by [Jenny Waller](jen@jenwaller.se) as a playaround project 2024.
