@@ -2,7 +2,7 @@
 
 Small Next.js, Typescript, project with change of Themes using Cookie and Context for user settings.
 
-### Subheadline
+### About
 
 A responsive and user-friendly portfolio-inspired Single Page built with Next.js, TypeScript, and Tailwind CSS. Easily toggle between professional and creative themes, with user preferences stored in cookies for a seamless experience.
 
